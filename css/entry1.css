@@ -38,7 +38,7 @@ body {
         grid-row-gap: 1vw;
         height: 40vw auto;
         
-        background-image: url("/Users/yaninghu/Desktop/hc-framework-main/images/photo2.png");
+        background-image: url("../images/photo2.png");
         background-size: cover; /* Adjust image size */
         background-position: center; /* Center the image */
         background-repeat: no-repeat;
