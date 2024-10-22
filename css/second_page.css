@@ -58,6 +58,14 @@ main {
 .item9 { grid-area: 3 / 4 / 4 / 5; }
 .item10 { grid-area: 4 / 3 / 5 / 4; }
 
+.heartgrid a img {
+  transition: transform 0.3s ease;  /* Smooth transition for the movement */
+}
+
+.heartgrid a img:hover {
+  transform: scale(1.1) translateY(-10px); /* Scale and move the image upwards */
+}
+
 nav {
   margin-left: 5vw;
   height: 80px;
