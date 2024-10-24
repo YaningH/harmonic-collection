@@ -1,6 +1,6 @@
 body {
     background-color: #000000; 
-    color: #8d0707;
+    color: #ffffff;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
@@ -41,6 +41,33 @@ body {
     justify-content: center; /* Centers content vertically */
     align-items: center;     /* Centers content horizontally */
     text-align: center;
+}
+
+.playlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;     /* Centers content horizontally */
+}
+
+.overlay-container {
+  position: relative;
+  width: 90%; /* Ensure it scales with the width of the container */
+}
+
+.overlay-container img {
+  width: 100%; /* Makes the image fill the container */
+  height: auto; /* Keeps the aspect ratio */
+}
+
+.overlay-container iframe {
+  position: absolute;
+  top: 75%; /* Aligns the iframe to the top of the container */
+  left: 5%; /* Aligns the iframe to the left */
+  width: 90%; /* Makes the iframe the same width as the container */
+  height: 20%; /* Makes the iframe cover the entire image */
 }
 
 
