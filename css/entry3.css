@@ -31,17 +31,66 @@ body {
 
         /* basic grids */
     main {
-        width: 90vw;
+        width: 100%;
         margin: 0 auto;
         }
-
+        
 .maingrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center;     /* Centers content horizontally */
-    text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 3fr;
+  grid-template-rows: 2fr 1fr 0.1fr 3fr 0.1fr 3fr 0.8fr 1fr 2fr;
+  padding-top: 2vw;
+  width: 100%;
 }
+
+.maingrid li:nth-child(1) {
+    grid-row: 2 / span 7;
+    grid-column: 2 / span 4;
+    z-index: 2;
+}
+
+.maingrid li:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 3;
+    z-index: 1;
+}
+
+.maingrid li:nth-child(3) {
+    grid-row: 4 / span 4;
+    grid-column: 1 / span 3;
+    z-index: 1;
+}
+
+.maingrid li:nth-child(4) {
+    grid-row: 6 / span 6;
+    grid-column: 1 / span 3;
+    z-index: 1;
+}
+
+.maingrid li:nth-child(5) {
+    grid-row: 8 / span 9;
+    grid-column: 2 / span 4;
+    z-index: 1;
+}
+
+.maingrid li:nth-child(6) {
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 4;
+  z-index: 1;
+}
+
+.maingrid li:nth-child(7) {
+  grid-row: 7 / span 7;
+  grid-column: 1 / span 2;
+  z-index: 1;
+}
+
+.maingrid li:nth-child(8) {
+  grid-row: 8 / span 9;
+  grid-column: 1 / span 1;
+  z-index: 1;
+}
+
 
 
   nav {
@@ -57,10 +106,7 @@ body {
       color: #8d0707;
       padding: 0 1.5rem;
   }
+
+
   
-  figure img {
-    width: 100px;
-    height: auto;
-    margin-top: 3rem;
-  }
-  
+

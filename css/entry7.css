@@ -41,6 +41,7 @@ body {
     justify-content: center; /* Centers content vertically */
     align-items: center;     /* Centers content horizontally */
     text-align: center;
+    gap: 2vw;
 }
 
 
