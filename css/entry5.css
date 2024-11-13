@@ -1,6 +1,6 @@
 body {
     background-color: #000000; 
-    color: #8d0707;
+    color: #000000;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
@@ -16,7 +16,7 @@ body {
   
     --baseFontSize: clamp(0.75rem, 0.78rem + 0.38vw, 1.25rem);
   
-    --type-scale: 1.57;
+    --type-scale: 1.7;
   }
   html {
       font-size: var(--baseFontSize);
@@ -30,18 +30,52 @@ body {
     }  
 
         /* basic grids */
-    main {
-        width: 90vw;
-        margin: 0 auto;
-        }
+main {
+  width: 90vw;
+  margin: 0 auto;
+  }
 
 .maingrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center;     /* Centers content horizontally */
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  grid-template-rows: 0.1fr 1.3fr 0.3fr;
+  width: 100%;
+  margin-top: -10;
+  background-image: url("../images/red.png");
+  background-size: cover; /* Adjust image size */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
 }
+
+.secondgrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  text-align: left;
+  color: #8d0707;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.photoone {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-bottom: 5vw;
+}
+
+.phototwo {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding-bottom: 5vw;
+}
+
 
 
   nav {
@@ -58,18 +92,5 @@ body {
       padding: 0 1.5rem;
   }
   
-  figure img {
-    width: 100px;
-    height: auto;
-    margin-top: 3rem;
-  }
 
-  .movies {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    align-items: center;     /* Centers content horizontally */
-}
   

@@ -30,18 +30,39 @@ body {
     }  
 
         /* basic grids */
-    main {
-        width: 90vw;
-        margin: 0 auto;
-        }
+
 
 .maingrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center;     /* Centers content horizontally */
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
 }
+
+.maingrid li:nth-child(1) {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  width: 100%;
+  z-index: 1;
+}
+
+.maingrid li:nth-child(2) {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 1;
+  width: 100%;
+  z-index: 1;
+}
+
+.maingrid li:nth-child(3) {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 2;
+  width: 100%;
+  z-index: 1;
+}
+
+
 
 
   nav {
