@@ -30,18 +30,37 @@ body {
     }  
 
         /* basic grids */
-    main {
-        width: 90vw;
-        margin: 0 auto;
-        }
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  text-align: center;
+}
 
 .maingrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center;     /* Centers content horizontally */
-    text-align: center;
-    gap: 2vw;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+}
+
+.maingrid img {
+  width: 100%;
+  height: 90%;
+  padding-top: 2vw;
+  object-fit: cover; /* Makes the image cover the entire grid cell */
+  display: block; /* Removes any extra space around images */
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  padding-left: 1%;
+  padding-bottom: 5%;
 }
 
 
@@ -57,11 +76,5 @@ body {
   nav a {
       color: #8d0707;
       padding: 0 1.5rem;
-  }
-  
-  figure img {
-    width: 100px;
-    height: auto;
-    margin-top: 3rem;
   }
   

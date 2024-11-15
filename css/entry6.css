@@ -39,6 +39,7 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
+    padding-left: 5%;
 }
 
 .maingrid li:nth-child(1) {
@@ -62,8 +63,13 @@ body {
   z-index: 1;
 }
 
-
-
+.movie {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
   nav {
     margin-left: 5vw;

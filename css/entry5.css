@@ -40,7 +40,6 @@ main {
   grid-template-columns: 1fr 0.8fr 1fr;
   grid-template-rows: 0.1fr 1.3fr 0.3fr;
   width: 100%;
-  margin-top: -10;
   background-image: url("../images/red.png");
   background-size: cover; /* Adjust image size */
   background-position: center; /* Center the image */
@@ -65,6 +64,7 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding-bottom: 5vw;
+  opacity: 50%;
 }
 
 .phototwo {
@@ -74,6 +74,7 @@ main {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding-bottom: 5vw;
+  opacity: 50%;
 }
 
 
