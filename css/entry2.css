@@ -1,6 +1,6 @@
 body {
     background-color: #000000; 
-    color: #8d0707;
+    color: #ffffff;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
@@ -52,6 +52,7 @@ body {
     align-items: center;     /* Centers content horizontally */
 }
 
+
 .overlay-container {
   position: relative;
   width: 90%; /* Ensure it scales with the width of the container */
@@ -70,6 +71,31 @@ body {
   height: 20%; /* Makes the iframe cover the entire image */
 }
 
+.overlay-container img {
+  width: 100%; /* Default width */
+  height: auto; /* Keep the aspect ratio */
+  transition: transform 1s ease; /* Smooth transition for scaling */
+}
+
+.overlay-container img:hover {
+  transform: scale(0.9); /* Scale image to 110% */
+}
+
+.custom-line {
+  border: none; /* Remove default border */
+  height: 1px; /* Set line thickness */
+  background-color: #ffffff; /* Set color */
+  margin: 2rem auto; /* Center it and add margin */
+  width: 90vw; /* Line width */
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 
   nav {
     margin-left: 5vw;
@@ -81,7 +107,7 @@ body {
     padding: 0rem calc((100vw - 1300px)/2);
   }
   nav a {
-      color: #8d0707;
+      color: #ffffff;
       padding: 0 1.5rem;
   }
   

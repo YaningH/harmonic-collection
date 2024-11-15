@@ -29,6 +29,10 @@ body {
       margin-bottom: var(--space-3);
     }  
 
+    h1 {
+      margin-top: 0;
+    }
+
         /* basic grids */
 main {
   width: 90vw;
@@ -44,6 +48,7 @@ main {
   background-size: cover; /* Adjust image size */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .secondgrid {

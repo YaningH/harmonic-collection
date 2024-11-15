@@ -26,7 +26,7 @@ body {
   
     h1, h2, h3, h4, h5, h6 {
       font-family: var(--headingFont);
-      margin-bottom: var(--space-3);
+      margin-bottom: 0;
     }  
 
         /* basic grids */
@@ -39,7 +39,6 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
-    padding-left: 5%;
 }
 
 .maingrid li:nth-child(1) {
@@ -90,4 +89,36 @@ body {
     height: auto;
     margin-top: 3rem;
   }
-  
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.maingrid, .movie {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: start;
+    justify-items: start;
+}
+
+body, main {
+    margin: 0;
+    padding: 0;
+}
+
+.movie h1, 
+.movie h2, 
+.maingrid li h1, 
+.maingrid li h4 {
+    padding: 0 20px; /* Adds 20px padding to the left and right */
+    box-sizing: border-box; /* Ensures padding doesn’t alter the element width */
+}
+
+h3 {
+  padding: 0 3vw;
+  box-sizing: border-box; /* Ensures padding doesn’t alter the element width */
+}
