@@ -34,6 +34,12 @@ body {
         width: 90vw;
         margin: 0 auto;
         }
+    .special-font {
+      font-family: 'Alex Brush', cursive;
+      font-size: 6rem; /* Adjust size to suit your design */
+      color: #8d0707; /* Optional: Keep or change the color */
+    }
+
 .title {
     display: flex;
     flex-direction: column;

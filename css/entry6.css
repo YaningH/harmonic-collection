@@ -122,3 +122,11 @@ h3 {
   padding: 0 3vw;
   box-sizing: border-box; /* Ensures padding doesn’t alter the element width */
 }
+
+.custom-line {
+  border: none; /* Remove default border */
+  height: 3px; /* Set line thickness */
+  background-color: #8d0707; /* Set color */
+  margin: 2rem auto; /* Center it and add margin */
+  width: 90vw; /* Line width */
+}
