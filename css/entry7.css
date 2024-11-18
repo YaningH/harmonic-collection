@@ -16,7 +16,7 @@ body {
   
     --baseFontSize: clamp(0.75rem, 0.78rem + 0.38vw, 1.25rem);
   
-    --type-scale: 1.57;
+    --type-scale: 2;
   }
   html {
       font-size: var(--baseFontSize);
@@ -26,7 +26,7 @@ body {
   
     h1, h2, h3, h4, h5, h6 {
       font-family: var(--headingFont);
-      margin-bottom: var(--space-3);
+      margin-bottom: 0;
     }  
 
         /* basic grids */
