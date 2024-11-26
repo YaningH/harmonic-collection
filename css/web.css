@@ -20,7 +20,7 @@ body {
   
   
   body {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'DM Serif Display', sans-serif;
   }
   
   code {
@@ -33,7 +33,7 @@ body {
 
     /* Typography */
   --headingFont: 'GeistSans', sans-serif;
-  --bodyFont: 'GeistSans', sans-serif;
+  --bodyFont: 'DM Serif Display', sans-serif;
 
   --baseFontSize: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
 

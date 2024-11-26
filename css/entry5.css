@@ -1,6 +1,6 @@
 body {
     background-color: #000000; 
-    color: #000000;
+    color: #8d0707;
   }
   
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap'); 
@@ -49,6 +49,8 @@ main {
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
   text-align: center;
+  color: #000000;
+
 }
 
 .secondgrid {
@@ -57,7 +59,6 @@ main {
   justify-content: center; /* Centers content vertically */
   align-items: center;     /* Centers content horizontally */
   text-align: left;
-  color: #8d0707;
   padding-top: 5vw;
   padding-bottom: 5vw;
 }

@@ -36,7 +36,7 @@
   --headingFont: 'DM Serif Display', serif;
   --bodyFont: 'Inter', sans-serif;
 
-  --baseFontSize: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
+  --baseFontSize: clamp(0.9rem, 0.9rem + 0.5vw, 1.25rem);
 
   --type-scale: 1.333;
 
@@ -254,9 +254,9 @@ a:hover {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: none; }
 ol {
-  list-style: decimal inside; }
+  list-style: none; }
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
@@ -417,7 +417,10 @@ there.
 
 
 /* Larger than mobile (default point when grid becomes active) */
-@media (min-width: 600px) {}
+@media (max-width: 600px) {
+  h3 { font-size: var(--smText); }
+
+}
 
 /* Larger than phablet */
 @media (min-width: 900px) {}
